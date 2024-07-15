@@ -19,7 +19,7 @@ fun main(){
 
     println("결과:")
     list.sorted()
-        .forEach { println(it) }
+        .forEach { println(it) }    // forEach -> 리스트의 길이만큼 반복, 람다함수처럼 리스트값을 인자로받아 사용가능
 
     reader.close()
 }
