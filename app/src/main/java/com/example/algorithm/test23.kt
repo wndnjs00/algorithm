@@ -1,6 +1,6 @@
 package com.example.algorithm
 
- 실행 오류나는 코드
+//실행 오류나는 코드
 
 fun main() {
 
