@@ -18,8 +18,11 @@ fun main(){
     }
 
     println("결과:")
+    val startTime = System.currentTimeMillis()  // 시간측정하기위해
     list.sorted()
         .forEach { println(it) }
+    val endTime = System.currentTimeMillis()
+    println("TimSort 수행 시간: ${endTime - startTime}")
 
     reader.close()
 }
