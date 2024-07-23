@@ -19,7 +19,7 @@ fun main() {
     val endTime = System.currentTimeMillis()
     list.forEach { println(it) }
 
-    println("TimSort 수행 시간: ${endTime - startTime}")
+    println("quickSort 수행 시간: ${endTime - startTime}")
     reader.close()
 }
 

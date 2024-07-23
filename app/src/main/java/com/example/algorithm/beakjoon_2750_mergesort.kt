@@ -16,10 +16,10 @@ fun main() {
     println("결과:")
     val startTime = System.currentTimeMillis()  // 시간비교위해
     val sortedList = mergeSort(list)
-    val endTime = System.currentTimeMillis()
     sortedList.forEach { println(it) }
+    val endTime = System.currentTimeMillis()
 
-    println("TimSort 수행 시간: ${endTime - startTime}")
+    println("mergeSort 수행 시간: ${endTime - startTime}")
     reader.close()
 }
 

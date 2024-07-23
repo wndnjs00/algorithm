@@ -22,7 +22,7 @@ fun main(){
     list.sorted()
         .forEach { println(it) }
     val endTime = System.currentTimeMillis()
-    println("TimSort 수행 시간: ${endTime - startTime}")
+    println("sorted() 수행 시간: ${endTime - startTime}")
 
     reader.close()
 }
