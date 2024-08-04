@@ -7,6 +7,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 // launch => 현재 스레드를 차단하지 않고 새로운 코루틴을 실행
+// launch => public fun CoroutineScope.launch() 로 CoroutineScope의 확장함수기때문에 CoroutineScope내에 launch를 작성해줘야함
 fun main(){
     GlobalScope.launch{
         delay(1000L)    // delay(중단함수) => suspend함수의 일종
