@@ -71,3 +71,25 @@ fun main1() = runBlocking {
 //        news.await()
 //    )
 //}
+
+
+
+/* 구조화된 동시성 */
+// launch는 runBlocking의 자식이 되기때문에
+// runBlocking은 모든 자식의 작업이 끝날때까지 중단됨(suspend됨)
+fun main02() = runBlocking {
+    this.launch { // same as just launch
+        delay(1000L)
+        println("World!")
+    }
+    launch { // same as this.launch
+        delay(2000L)
+        println("World!")
+    }
+    println("Hello,")
+}
+// Hello,
+// (1초 후)
+// World!
+// (1초 후)
+// World!
