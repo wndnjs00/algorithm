@@ -1,7 +1,5 @@
-package com.example.algorithm
+package com.example.algorithm.kotlin_coroutine
 
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

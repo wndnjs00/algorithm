@@ -1,4 +1,4 @@
-package com.example.algorithm
+package com.example.algorithm.baekjoon
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

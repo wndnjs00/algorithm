@@ -1,4 +1,4 @@
-package com.example.algorithm
+package com.example.algorithm.programmers
 
 //실행 오류나는 코드
 

@@ -1,4 +1,4 @@
-package com.example.algorithm
+package com.example.algorithm.kotlin_coroutine
 
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.GlobalScope
