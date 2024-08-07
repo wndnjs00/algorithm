@@ -9,25 +9,24 @@ fun main() {
     val graph = Array(n+1) {IntArray(n+1)}      // 인접행렬     // graph[i][j] = 1  i,j연결      //graph[i][j] = 0  i,j연결안됨
     var visit = ArrayList<Int>()    // 방문한 노드 저장하기위해
 
-    // 간선 개수만큼 반복
     println("연결되어있는 두노드를 입력해주세요:")
+    // 간선 개수만큼 반복
     repeat(m) {
         // x,y - 연결되어있는 노드번호
         val (x,y) = readLine()!!.split(" ").map {it.toInt()}
 
-        // x,y 서로연결     // X,y / y,x모두 연결되어있음 -> 방향이없는 그래프임을 표시
+        // x,y 서로연결     // x,y / y,x모두 연결되어있음 -> 방향이없는 그래프임을 표시
         graph[x][y] = 1
         graph[y][x] = 1
     }
 
     println("DFS 연산결과:")
-    dfs(v, graph, visit)  // dfs 탐색
-    println()
+    dfs(v, graph, visit)
 
     visit = ArrayList<Int>()  // 방문 노드 초기화
+    println()
     println("BFS 연산결과:")
-    bfs(v, graph, visit)  // bfs 탐색
-
+    bfs(v, graph, visit)
 }
 
 
