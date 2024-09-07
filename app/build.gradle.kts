@@ -35,6 +35,8 @@ android {
     }
 }
 
+
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
@@ -52,6 +54,9 @@ dependencies {
 
     // slelect -> raceOf 라이브러리
     implementation("com.louiscad.splitties:splitties-coroutines:3.0.0-beta06")
+
+
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0")
 
 
 }
