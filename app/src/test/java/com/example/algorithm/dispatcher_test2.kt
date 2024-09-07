@@ -23,7 +23,7 @@ class DiscUserRepository03(
 
 // 테스트 클래스
 // ContinuationInterceptor를 사용하여 테스트하는 방법
-class UserReaderTests {
+class UsersReaderTests {
     @Test
     fun `some test`() = runTest {
         // 테스트 준비 과정
